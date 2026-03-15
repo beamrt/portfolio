@@ -9,7 +9,7 @@ export const Aboutdiv = styled.div`
   gap: 50px;
   justify-content: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   min-height: 80vh;
   padding: 60px 40px;
   border-radius: 24px;
@@ -19,13 +19,13 @@ export const Aboutdiv = styled.div`
 `;
 
 export const AboutImage = styled.img`
-  width: 500px;
-  height: 500px;
+  width: 468px;
+  height: 480px;
   object-fit: cover;
   margin-top: -100px;
 `;
 
-export const AboutContent = styled.div`
+export const AboutContent = styled.article`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,4 +39,11 @@ export const Me = styled.h1`
   font-size: 40px;
   color: #b07a87;
   margin-top: -102px;
+`;
+
+export const AboutText = styled.p`
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  color: #b07a87;
+  font-size: 20px;
 `;

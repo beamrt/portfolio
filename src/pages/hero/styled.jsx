@@ -1,19 +1,19 @@
 import styled from 'styled-components';
 
-export const Herodiv = styled.div`
+export const Herodiv = styled.article`
   position: relative;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 35px;
   display: flex;
   align-items: center;
   gap: 50px;
   justify-content: space-between;
+  flex-direction: column;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
   min-height: 80vh;
   padding: 60px 40px;
   border-radius: 24px;
-  //background: #f1e6ea;
   background: #efe2e7;
   box-shadow: 0 8px 10px rgba(176, 122, 135, 0.15);
 `;
@@ -21,12 +21,11 @@ export const Herodiv = styled.div`
 export const Seconddiv = styled.div`
   display: flex;
   flex: 1 0 60%;
-  max-width: none;
   justify-content: flex-start;
   align-items: center;
   margin-left: auto;
+  height: 200px;
   gap: 20px;
-  min-height: 20vh;
   padding: 24px 28px;
   border-radius: 24px;
   border: 2px solid rgba(176, 122, 135, 0.15);
@@ -78,17 +77,6 @@ export const Name = styled.h1`
   -webkit-text-fill-color: transparent;
 `;
 
-// export const Home = styled.h1`
-//   position: absolute;
-//   top: 160px;
-//   right: 80px;
-//   margin: 0;
-//   font-family: 'DM Serif Display', serif;
-//   font-weight: 400;
-//   font-size: 50px;
-//   color: #b07a87;
-// `;
-
 export const ProfileWrapper = styled.div`
   width: clamp(220px, 30vw, 350px);
   height: clamp(220px, 30vw, 350px);
@@ -109,4 +97,54 @@ export const ProfileImage = styled.img`
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
+`;
+
+export const ContactMe = styled.button`
+  width: 180px;
+  height: 50px;
+  background: linear-gradient(90deg, #8b5e69, #ad828ccc);
+  border: 1px solid #8f616c;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #fff5ee;
+`;
+
+export const WrapperCloser = styled.div`
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 70px;
+`;
+
+export const WrapperIcon = styled.div`
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  .github {
+    font-size: 32px;
+    color: #8f616c;
+  }
+
+  .linkedin {
+    font-size: 32px;
+    color: #8f616c;
+  }
+
+  .insta {
+    font-size: 32px;
+    color: #8f616c;
+    margin-bottom: 5px;
+  }
+`;
+
+export const LinkComponent = styled.a`
+  text-decoration: none;
+  color: inherit;
 `;

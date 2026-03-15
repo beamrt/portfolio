@@ -1,14 +1,10 @@
-import {
-  Herodiv,
-  ProfileImage,
-  ProfileWrapper,
-  Seconddiv,
-  Uldescription,
-  Lidescription,
-  Name,
-  NameWrapper,
-  Jobtitle,
-} from './styled';
+import React from 'react';
+
+import { FaGithub } from 'react-icons/fa6';
+import { FaLinkedin } from 'react-icons/fa';
+import { FaSquareInstagram } from 'react-icons/fa6';
+
+import * as hero from './styled';
 import Navbar from '../../components/navbar/Navbar';
 import profile from '../../image/profile.png';
 
@@ -16,23 +12,45 @@ export default function Hero() {
   return (
     <>
       <Navbar />
-      <Herodiv>
-        <ProfileWrapper>
-          <ProfileImage src={profile} />
-        </ProfileWrapper>
-        <Seconddiv>
-          <Uldescription>
-            <Lidescription>Olá, meu nome é </Lidescription>
-            <NameWrapper>
-              <Name>Beatriz Martins ✦</Name>
-            </NameWrapper>
-            <Jobtitle>Front-end com foco em UI/UX</Jobtitle>
-            <Lidescription>
-              Interfaces funcionais, organizadas e agradáveis
-            </Lidescription>
-          </Uldescription>
-        </Seconddiv>
-      </Herodiv>
+      <hero.Herodiv>
+        <hero.WrapperCloser>
+          <hero.ProfileWrapper>
+            <hero.ProfileImage src={profile} />
+          </hero.ProfileWrapper>
+          <hero.Seconddiv>
+            <hero.Uldescription>
+              <hero.Lidescription>Olá, meu nome é </hero.Lidescription>
+              <hero.NameWrapper>
+                <hero.Name>Beatriz Martins ✦</hero.Name>
+              </hero.NameWrapper>
+              <hero.Jobtitle>Front-end com foco em UI/UX</hero.Jobtitle>
+              <hero.Lidescription>
+                Interfaces funcionais, organizadas e agradáveis
+              </hero.Lidescription>
+            </hero.Uldescription>
+          </hero.Seconddiv>
+        </hero.WrapperCloser>
+        <hero.WrapperIcon>
+          <a href="https://github.com/beamrt" target="_blank" rel="noreferrer">
+            <FaGithub className="github" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/beamrt/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaLinkedin className="linkedin" />
+          </a>
+          <a
+            href="https://www.instagram.com/_beamrt"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaSquareInstagram className="insta" />
+          </a>
+        </hero.WrapperIcon>
+        <hero.ContactMe>Contato</hero.ContactMe>
+      </hero.Herodiv>
     </>
   );
 }

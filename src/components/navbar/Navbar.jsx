@@ -8,7 +8,6 @@ export default function Navbar() {
       <Ulnav>
         <Titlenav>Home</Titlenav>
         <Titlenav>Sobre Mim</Titlenav>
-        <Titlenav>Soft Skills</Titlenav>
         <Titlenav>Projetos</Titlenav>
         <Titlenav>Contato</Titlenav>
       </Ulnav>
