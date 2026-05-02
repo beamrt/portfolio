@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const Topnavbar = styled.div`
-  margin: 0 auto;
-  margin-top: 20px;
+  margin: 20px auto;
   display: flex;
   width: 1600px;
   height: 90px;
@@ -10,9 +9,11 @@ export const Topnavbar = styled.div`
   align-items: center;
   border-radius: 20px;
   border: 2px solid #bfa19a;
-  background: #edeaed;
+  background: #edebea;
   box-shadow: 2px 1px 8px #bfa19a;
   justify-content: space-between;
+  position: relative;
+  z-index: 10;
 `;
 
 export const Logo = styled.img`
@@ -38,4 +39,5 @@ export const Titlenav = styled.li`
   font-family: 'DM Serif Display', serif;
   font-weight: 500;
   font-style: normal;
+  cursor: pointer;
 `;

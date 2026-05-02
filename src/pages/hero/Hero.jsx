@@ -31,25 +31,32 @@ export default function Hero() {
           </hero.Seconddiv>
         </hero.WrapperCloser>
         <hero.WrapperIcon>
-          <a href="https://github.com/beamrt" target="_blank" rel="noreferrer">
+          <hero.LinkComponent
+            href="https://github.com/beamrt"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaGithub className="github" />
-          </a>
-          <a
+          </hero.LinkComponent>
+          <hero.LinkComponent
             href="https://www.linkedin.com/in/beamrt/"
             target="_blank"
             rel="noreferrer"
           >
             <FaLinkedin className="linkedin" />
-          </a>
-          <a
+          </hero.LinkComponent>
+          <hero.LinkComponent
             href="https://www.instagram.com/_beamrt"
             target="_blank"
             rel="noreferrer"
           >
             <FaSquareInstagram className="insta" />
-          </a>
+          </hero.LinkComponent>
         </hero.WrapperIcon>
-        <hero.ContactMe>Contato</hero.ContactMe>
+        <hero.WrapperCloser>
+          <hero.ContactMe>Contato</hero.ContactMe>
+          <hero.Projects>Projetos</hero.Projects>
+        </hero.WrapperCloser>
       </hero.Herodiv>
     </>
   );

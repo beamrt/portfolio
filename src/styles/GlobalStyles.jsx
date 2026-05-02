@@ -7,7 +7,8 @@ export default createGlobalStyle`
   box-sizing: border-box;
 }
 
-body {
-  background: #faf4fa;
-}
+ body {
+   background: #faf4fa;
+   overflow-x: hidden;
+ }
 `;
